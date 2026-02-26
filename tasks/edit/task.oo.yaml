@@ -1,0 +1,47 @@
+executor:
+  name: nodejs
+  options:
+    entry: main.ts
+inputs_def:
+  - handle: imageUrl
+    json_schema:
+      type: string
+      format: uri
+  - handle: prompt
+    json_schema:
+      type: string
+      ui:widget: text
+  - group: Optional Settings
+    collapsed: true
+  - handle: aspectRatio
+    json_schema:
+      enum:
+        - 21:9
+        - 16:9
+        - 3:2
+        - 4:3
+        - 5:4
+        - 1:1
+        - 4:5
+        - 3:4
+        - 2:3
+        - 9:16
+    value: 3:2
+    nullable: true
+  - handle: resolution
+    json_schema:
+      enum:
+        - 1K
+        - 2K
+        - 4K
+      ui:options:
+        {}
+    nullable: true
+    value: 1K
+outputs_def:
+  - handle: imageUrl
+    json_schema:
+      type: string
+icon: ":twemoji:banana:"
+title: Editor
+description: Edit image using nano banana pro

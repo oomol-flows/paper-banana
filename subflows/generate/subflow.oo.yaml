@@ -1,0 +1,79 @@
+nodes:
+  - node_id: retrieve#1
+    title: "Retriever #1"
+    inputs_from:
+      - handle: content
+        value: 研究甲状腺髓样癌的相关机制，目前的样本是一共14例患者，其中11个甲状腺髓样癌肿瘤原发灶，11个甲状腺癌旁正常组织，8个转移淋巴结，1个肝转移样本。对上述所有的临床样本进行单细胞测序，然后根据单细胞测序结果进行单细胞亚群的分群注释，细胞间相互作用，差异基因通路富集分析等，发现有远处转移倾向的甲状腺髓样癌肿瘤细胞其线粒体相关的基因表达增加，特别是PGC-1α，然后PROS1的组蛋白发生乙酰化修饰，PROS1的表达上升，肿瘤细胞与巨噬细胞通过PROS1/MERTK相互作用，促进肿瘤相关巨噬细胞的形成。通过请你不添加任外部假设或偏离内容，同时避免过多细节以保持简洁。我现在上面的是基于此实验，生成一张高质量的机制图，机制图的内容包括左右两部分，左边部分是正常甲状腺细胞与巨噬细胞的作用关系，右边是有远处转移倾向的甲状腺髓样癌肿瘤细胞其线粒体相关的基因表达增加，特别是PGC-1α，然后PROS1的组蛋白发生乙酰化修饰，PROS1的表达上升，肿瘤细胞与巨噬细胞通过PROS1/MERTK相互作用，促进肿瘤相关巨噬细胞的形成。
+        from_flow:
+          - input_handle: content
+        from_node:
+          []
+      - handle: caption
+        value: null
+        from_flow:
+          - input_handle: caption
+        from_node:
+          []
+    task: self::retrieve
+  - node_id: plan#1
+    title: "Planner #1"
+    inputs_from:
+      - handle: content
+        from_flow:
+          - input_handle: content
+        from_node:
+          []
+      - handle: caption
+        value: null
+        from_flow:
+          - input_handle: caption
+        from_node:
+          []
+      - handle: references
+        value: null
+        from_node:
+          - node_id: retrieve#1
+            output_handle: references
+    task: self::plan
+  - node_id: visualize#1
+    title: "Visualizer #1"
+    inputs_from:
+      - handle: prompt
+        from_node:
+          - node_id: plan#1
+            output_handle: prompt
+      - handle: imageUrls
+        value: null
+        from_node:
+          - node_id: plan#1
+            output_handle: imageUrls
+    task: self::visualize
+inputs_def:
+  - handle: content
+    json_schema:
+      type: string
+      ui:widget: text
+    nullable: false
+  - handle: caption
+    json_schema:
+      type: string
+    value:
+    nullable: true
+outputs_def:
+  - handle: imageUrl
+    json_schema:
+      type: string
+      format: uri
+    executor_name: nodejs
+outputs_from:
+  - handle: imageUrl
+    from_node:
+      - node_id: visualize#1
+        output_handle: imageUrl
+forward_previews:
+  - retrieve#1
+  - plan#1
+  - visualize#1
+icon: ":twemoji:banana:"
+title: Generate
+description: Automated academic illustration generation

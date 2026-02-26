@@ -1,0 +1,50 @@
+{
+  "nodes": {
+    "+value#1": {
+      "contentWidth": 415,
+      "rfNode": {
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "sections": {
+        "value": {
+          "collapsed": {
+            "content": {
+              "[]": false
+            }
+          }
+        }
+      }
+    },
+    "edit#1": {
+      "rfNode": {
+        "position": {
+          "x": 967,
+          "y": 52
+        }
+      },
+      "sections": {
+        "inputs": {
+          "groupCollapsed": {
+            "Optional Settings": true
+          }
+        },
+        "preview": {
+          "_:oo-preview:_": {
+            "cardCollapsed": true
+          }
+        }
+      }
+    },
+    "generate#1": {
+      "rfNode": {
+        "position": {
+          "x": 479.4783080260304,
+          "y": 52
+        }
+      }
+    }
+  }
+}

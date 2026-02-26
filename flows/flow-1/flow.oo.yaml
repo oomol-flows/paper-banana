@@ -1,0 +1,56 @@
+nodes:
+  - node_id: +value#1
+    title: "Value #1"
+    values:
+      - handle: content
+        json_schema:
+          type: string
+          ui:widget: text
+        nullable: false
+        value: 探讨乳腺癌MRI形态学表现与病理、分子生物学之间的相关性。方法　对 78例原发性乳腺癌患者术前行乳腺MR扫描
+          ,分析乳腺癌的MRI形态学表现。术后标本行免疫组织化学染色测定癌细胞雌激素受体 (ER)、孕激素受体 (PR)、C erbB 2和P5
+          3的表达情况及微血管密度 (MVD)分布情况 ,并分析与MRI表现之间的关系。结果　 80个乳腺癌中
+          ,癌肿毛刺状边缘与癌细胞ER阳性表达呈正相关 (P <0 0 1) ,肿瘤T分期与癌细胞ER阳性表达呈负相关 (P <0 0 5 )
+          ,肿瘤内部坏死与癌细胞C erbB 2、P5 3阳性表达呈正相关 (P <0 0 5 )
+          ,而肿瘤毛刺状边缘、边界模糊、内部坏死、T分期与癌细胞PR表达水平无显著相关性 (P >0 0 5 )。 4 1个乳腺癌中
+          ,癌肿动态增强MR对比剂空间分布与相应MVD之间存在高度正相关 (P <0 0
+          1)。结论　乳腺癌MRI形态学表现与病理、分子生物学之间存在一定相关性 ,可根据乳腺癌MRI表现对癌灶的生物学行为和预后进行评估。
+      - handle: caption
+        json_schema:
+          type: string
+        nullable: true
+        value:
+  - node_id: edit#1
+    title: "Editor #1"
+    inputs_from:
+      - handle: imageUrl
+        from_node:
+          - node_id: generate#1
+            output_handle: imageUrl
+      - handle: prompt
+        value: Translate texts on this image to Chinese.
+      - handle: aspectRatio
+        value: 3:2
+      - handle: resolution
+        value: 1K
+    task: self::edit
+  - node_id: generate#1
+    title: "Generate #1"
+    inputs_from:
+      - handle: content
+        from_node:
+          - node_id: +value#1
+            output_handle: content
+      - handle: caption
+        from_node:
+          - node_id: +value#1
+            output_handle: caption
+      - handle: input
+        from_node:
+          - node_id: +value#1
+            output_handle: content
+      - handle: input2
+        from_node:
+          - node_id: +value#1
+            output_handle: caption
+    subflow: self::generate

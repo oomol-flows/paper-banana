@@ -1,0 +1,33 @@
+executor:
+  name: nodejs
+  options:
+    entry: main.ts
+inputs_def:
+  - handle: content
+    json_schema:
+      type: string
+      ui:widget: text
+  - handle: caption
+    json_schema:
+      type: string
+    nullable: true
+    value:
+outputs_def:
+  - handle: references
+    json_schema:
+      type: array
+      items:
+        type: object
+        properties:
+          id:
+            type: string
+          visual_intent:
+            type: string
+          content:
+            type: string
+          path_to_gt_image:
+            type: string
+icon: ":twemoji:magnifying-glass-tilted-left:"
+description: Identifies the most relevant reference diagrams from a curated
+  collection to guide downstream agents
+title: Retriever

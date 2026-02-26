@@ -1,0 +1,46 @@
+{
+  "nodes": {
+    "retrieve#1": {
+      "rfNode": {
+        "position": {
+          "x": 486,
+          "y": 109.75
+        }
+      }
+    },
+    "plan#1": {
+      "rfNode": {
+        "position": {
+          "x": 972,
+          "y": 0
+        }
+      }
+    },
+    "visualize#1": {
+      "rfNode": {
+        "position": {
+          "x": 1458,
+          "y": 27
+        }
+      }
+    }
+  },
+  "pseudoNodes": {
+    "input": {
+      "rfNode": {
+        "position": {
+          "x": 0,
+          "y": 85.5
+        }
+      }
+    },
+    "output": {
+      "rfNode": {
+        "position": {
+          "x": 1944,
+          "y": 99
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+version: 0.0.1
+scripts:
+  bootstrap: |
+    npm install
+    poetry install --no-root
+name: paper-banana
+displayName: PaperBanana
+icon: ":twemoji:banana:"
+description: Automating Academic Illustration For AI Scientists
+ui:
+  blocks:
+    - generate
+    - retrieve
+    - plan
+    - visualize
+    - edit

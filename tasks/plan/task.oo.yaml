@@ -1,0 +1,32 @@
+executor:
+  name: nodejs
+  options:
+    entry: main.ts
+inputs_def:
+  - handle: content
+    json_schema:
+      type: string
+      ui:widget: text
+  - handle: caption
+    json_schema:
+      type: string
+    value:
+    nullable: true
+  - handle: references
+    json_schema:
+      type: array
+    value:
+    nullable: true
+outputs_def:
+  - handle: prompt
+    json_schema:
+      type: string
+  - handle: imageUrls
+    json_schema:
+      type: array
+      items:
+        type: string
+icon: ":twemoji:bookmark-tabs:"
+title: Planner
+description: Translates method content and communicative intent into
+  comprehensive textual descriptions using in-context learning

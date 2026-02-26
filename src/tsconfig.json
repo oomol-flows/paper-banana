@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "esnext",
+    "module": "preserve",
+    "types": [],
+    "skipLibCheck": true,
+    "noEmit": true,
+    "noImplicitAny": false,
+    "strictPropertyInitialization": false,
+    "useUnknownInCatchVariables": false,
+    "noImplicitOverride": true,
+    "useDefineForClassFields": false,
+    "moduleDetection": "force"
+  }
+}

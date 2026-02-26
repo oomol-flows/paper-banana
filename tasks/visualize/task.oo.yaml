@@ -1,0 +1,24 @@
+executor:
+  name: nodejs
+  options:
+    entry: main.ts
+inputs_def:
+  - handle: prompt
+    json_schema:
+      type: string
+      ui:widget: text
+  - handle: imageUrls
+    json_schema:
+      type: array
+      items:
+        type: string
+    nullable: true
+    value:
+outputs_def:
+  - handle: imageUrl
+    json_schema:
+      type: string
+title: Visualizer
+icon: ":twemoji:banana:"
+description: Transforms textual descriptions into visual outputs using
+  state-of-the-art image generation models
