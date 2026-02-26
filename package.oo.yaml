@@ -1,4 +1,4 @@
-version: 0.1.0
+version: 0.1.1
 scripts:
   bootstrap: |
     npm install
@@ -15,4 +15,4 @@ ui:
     - visualize
     - edit
 repository: https://github.com/oomol-flows/paper-banana
-releaseNotes: initial release
+releaseNotes: update locales
