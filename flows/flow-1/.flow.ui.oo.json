@@ -22,7 +22,7 @@
       "rfNode": {
         "position": {
           "x": 967,
-          "y": 52
+          "y": 74
         }
       },
       "sections": {
@@ -30,19 +30,14 @@
           "groupCollapsed": {
             "Optional Settings": true
           }
-        },
-        "preview": {
-          "_:oo-preview:_": {
-            "cardCollapsed": true
-          }
         }
       }
     },
     "generate#1": {
       "rfNode": {
         "position": {
-          "x": 479.4783080260304,
-          "y": 52
+          "x": 481,
+          "y": 102
         }
       }
     }

@@ -4,29 +4,36 @@ executor:
     entry: main.ts
 inputs_def:
   - handle: content
+    description: "%research-method-or-scientific-content-to-be-illustrated-accepts%"
     json_schema:
       type: string
       ui:widget: text
+    nullable: false
   - handle: caption
+    description: "%optional-title-or-caption-for-the-illustration-provides-context%"
     json_schema:
       type: string
     value:
     nullable: true
   - handle: references
+    description: "%optional-array-of-reference-objects-from-retriever-each-contains%"
     json_schema:
       type: array
     value:
     nullable: true
 outputs_def:
   - handle: prompt
+    description: "%generated-detailed-prompt-for-image-visualization-contains-compr%"
     json_schema:
       type: string
+    nullable: false
   - handle: imageUrls
+    description: "%array-of-reference-image-urls-extracted-from-references-used-as%"
     json_schema:
       type: array
       items:
         type: string
+    nullable: false
 icon: ":twemoji:bookmark-tabs:"
-title: Planner
-description: Translates method content and communicative intent into
-  comprehensive textual descriptions using in-context learning
+title: "%planner%"
+description: "%translates-research-content-into-detailed-visual-prompts-using-i%"

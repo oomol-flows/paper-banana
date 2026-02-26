@@ -4,16 +4,20 @@ executor:
     entry: main.ts
 inputs_def:
   - handle: content
+    description: "%research-content-or-method-description-to-find-relevant-referenc%"
     json_schema:
       type: string
       ui:widget: text
+    nullable: false
   - handle: caption
+    description: "%optional-caption-providing-additional-context-for-retrieval-help%"
     json_schema:
       type: string
-    nullable: true
     value:
+    nullable: true
 outputs_def:
   - handle: references
+    description: "%array-of-matched-reference-objects-each-contains-id-unique-ident%"
     json_schema:
       type: array
       items:
@@ -27,7 +31,7 @@ outputs_def:
             type: string
           path_to_gt_image:
             type: string
+    nullable: false
 icon: ":twemoji:magnifying-glass-tilted-left:"
-description: Identifies the most relevant reference diagrams from a curated
-  collection to guide downstream agents
-title: Retriever
+title: "%retriever%"
+description: "%searches-curated-diagram-collection-to-find-visually-similar-ref%"

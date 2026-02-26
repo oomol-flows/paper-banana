@@ -4,21 +4,25 @@ executor:
     entry: main.ts
 inputs_def:
   - handle: prompt
+    description: "%detailed-text-description-of-the-image-to-generate-should-includ%"
     json_schema:
       type: string
       ui:widget: text
+    nullable: false
   - handle: imageUrls
+    description: "%optional-array-of-reference-image-urls-for-style-guidance-helps%"
     json_schema:
       type: array
       items:
         type: string
-    nullable: true
     value:
+    nullable: true
 outputs_def:
   - handle: imageUrl
+    description: "%url-of-the-generated-image-points-to-the-newly-created-illustrat%"
     json_schema:
       type: string
-title: Visualizer
+    nullable: false
+title: "%visualizer%"
 icon: ":twemoji:banana:"
-description: Transforms textual descriptions into visual outputs using
-  state-of-the-art image generation models
+description: "%generates-scientific-illustrations-from-text-prompts-using-state%"

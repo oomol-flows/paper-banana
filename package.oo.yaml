@@ -4,9 +4,9 @@ scripts:
     npm install
     poetry install --no-root
 name: paper-banana
-displayName: PaperBanana
+displayName: "%display-name%"
 icon: ":twemoji:banana:"
-description: Automating Academic Illustration For AI Scientists
+description: "%description%"
 ui:
   blocks:
     - generate

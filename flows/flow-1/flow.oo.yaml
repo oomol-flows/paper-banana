@@ -1,6 +1,6 @@
 nodes:
   - node_id: +value#1
-    title: "Value #1"
+    title: "%value-1%"
     values:
       - handle: content
         json_schema:
@@ -21,7 +21,7 @@ nodes:
         nullable: true
         value:
   - node_id: edit#1
-    title: "Editor #1"
+    title: "%editor-1%"
     inputs_from:
       - handle: imageUrl
         from_node:
@@ -35,7 +35,7 @@ nodes:
         value: 1K
     task: self::edit
   - node_id: generate#1
-    title: "Generate #1"
+    title: "%generate-1%"
     inputs_from:
       - handle: content
         from_node:

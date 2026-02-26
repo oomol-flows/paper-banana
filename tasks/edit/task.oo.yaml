@@ -4,16 +4,21 @@ executor:
     entry: main.ts
 inputs_def:
   - handle: imageUrl
+    description: "%url-of-the-source-image-to-edit-must-be-a-valid-uri-pointing-to%"
     json_schema:
       type: string
       format: uri
+    nullable: false
   - handle: prompt
+    description: "%text-instructions-describing-the-desired-edits-specify-changes-a%"
     json_schema:
       type: string
       ui:widget: text
+    nullable: false
   - group: Optional Settings
     collapsed: true
   - handle: aspectRatio
+    description: "%output-image-aspect-ratio-options-range-from-ultrawide-21-9-to-p%"
     json_schema:
       enum:
         - 21:9
@@ -29,6 +34,7 @@ inputs_def:
     value: 3:2
     nullable: true
   - handle: resolution
+    description: "%output-resolution-quality-1k-standard-2k-high-or-4k-ultra-high-d%"
     json_schema:
       enum:
         - 1K
@@ -36,12 +42,14 @@ inputs_def:
         - 4K
       ui:options:
         {}
-    nullable: true
     value: 1K
+    nullable: true
 outputs_def:
   - handle: imageUrl
+    description: "%url-of-the-edited-image-points-to-the-modified-image-file-with-a%"
     json_schema:
       type: string
+    nullable: false
 icon: ":twemoji:banana:"
-title: Editor
-description: Edit image using nano banana pro
+title: "%editor%"
+description: "%modifies-existing-images-based-on-text-instructions-using-ai-pow%"
