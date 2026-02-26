@@ -6,6 +6,8 @@ mode, i.e. Retrieve → Plan → Visualize.
 The output image can be below expectation. You can tweak the image later with
 the "edit" block.
 
+![](./image/preview.png)
+
 ## Credits
 
 The [dataset](https://huggingface.co/datasets/dwzhu/PaperBananaBench) and

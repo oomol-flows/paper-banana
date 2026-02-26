@@ -5,6 +5,8 @@
 
 生成的图片可能未达预期。你可以稍后使用 "edit" 区块对图片进行调整。
 
+![](./image/preview.png)
+
 ## Credits
 
 The [dataset](https://huggingface.co/datasets/dwzhu/PaperBananaBench) and

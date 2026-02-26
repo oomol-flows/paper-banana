@@ -32,8 +32,5 @@
   "end-to-end-academic-illustration-pipeline-retrieves-references-p": "{\"端到端学术插图流程\":\"检索参考资料，规划视觉布局，并生成可发表的图表。\"}",
   "research-content-or-method-description-to-illustrate-required-in": "研究内容或方法描述以进行说明。为驱动整个生成流程所需的输入。应包含科学机制、过程或发现。",
   "optional-title-or-caption-providing-context-passed-to-retriever": "可选标题或说明，用于提供上下文。传递给检索器和规划器，以更好地匹配视觉意图。",
-  "url-of-the-final-generated-academic-illustration-output-from-the": "最终生成的学术插图的 URL。完整流程执行后由 visualize 节点输出。",
-  "retriever-1": "寻回犬 #1",
-  "planner-1": "计划者 #1",
-  "visualizer-1": "可视化器 #1"
+  "url-of-the-final-generated-academic-illustration-output-from-the": "最终生成的学术插图的 URL。完整流程执行后由 visualize 节点输出。"
 }

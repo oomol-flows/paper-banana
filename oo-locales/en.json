@@ -32,8 +32,5 @@
   "end-to-end-academic-illustration-pipeline-retrieves-references-p": "{\"End-to-end academic illustration pipeline\":\"retrieves references, plans visual layout, and generates publication-ready diagrams.\"}",
   "research-content-or-method-description-to-illustrate-required-in": "Research content or method description to illustrate. Required input that drives the entire generation pipeline. Should contain scientific mechanisms, processes, or findings.",
   "optional-title-or-caption-providing-context-passed-to-retriever": "Optional title or caption providing context. Passed to retriever and planner for better visual intent matching.",
-  "url-of-the-final-generated-academic-illustration-output-from-the": "URL of the final generated academic illustration. Output from the visualize node after the complete pipeline execution.",
-  "retriever-1": "Retriever #1",
-  "planner-1": "Planner #1",
-  "visualizer-1": "Visualizer #1"
+  "url-of-the-final-generated-academic-illustration-output-from-the": "URL of the final generated academic illustration. Output from the visualize node after the complete pipeline execution."
 }
