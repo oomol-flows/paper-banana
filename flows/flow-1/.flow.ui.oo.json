@@ -4,8 +4,8 @@
       "contentWidth": 415,
       "rfNode": {
         "position": {
-          "x": -10.651843817787423,
-          "y": 0
+          "x": 0,
+          "y": 75.5
         }
       },
       "sections": {
@@ -22,13 +22,18 @@
       "rfNode": {
         "position": {
           "x": 967,
-          "y": 142
+          "y": 0
         }
       },
       "sections": {
         "inputs": {
           "groupCollapsed": {
             "Optional Settings": true
+          }
+        },
+        "preview": {
+          "_:oo-preview:_": {
+            "cardCollapsed": true
           }
         }
       }
@@ -37,7 +42,7 @@
       "rfNode": {
         "position": {
           "x": 481,
-          "y": 0
+          "y": 28
         }
       },
       "sections": {
