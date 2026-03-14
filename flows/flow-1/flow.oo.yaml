@@ -26,7 +26,7 @@ nodes:
       - handle: imageUrl
         from_node:
           - node_id: generate#1
-            output_handle: imageUrl
+            output_handle: filePath
       - handle: prompt
         value: Translate texts on this image to Chinese.
       - handle: aspectRatio

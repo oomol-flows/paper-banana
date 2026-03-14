@@ -23,6 +23,22 @@
           "y": 27
         }
       }
+    },
+    "url2file#1": {
+      "rfNode": {
+        "position": {
+          "x": 1926.8557416251747,
+          "y": 27
+        }
+      },
+      "sections": {
+        "inputs": {
+          "groupCollapsed": {
+            "Strategy": true,
+            "Connection": true
+          }
+        }
+      }
     }
   },
   "pseudoNodes": {
@@ -37,8 +53,8 @@
     "output": {
       "rfNode": {
         "position": {
-          "x": 1944,
-          "y": 99
+          "x": 2398.516277422801,
+          "y": 50.85283140785397
         }
       }
     }

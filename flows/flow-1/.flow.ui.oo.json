@@ -30,11 +30,6 @@
           "groupCollapsed": {
             "Optional Settings": true
           }
-        },
-        "preview": {
-          "_:oo-preview:_": {
-            "cardCollapsed": true
-          }
         }
       }
     },
@@ -43,13 +38,6 @@
         "position": {
           "x": 481,
           "y": 28
-        }
-      },
-      "sections": {
-        "preview": {
-          "visualize#1": {
-            "cardCollapsed": true
-          }
         }
       }
     }
