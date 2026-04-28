@@ -1,11 +1,11 @@
-version: 0.1.2
+version: 0.1.3
 scripts:
   bootstrap: |
     npm install
     poetry install --no-root
 name: paper-banana
 displayName: "%display-name%"
-icon: ":twemoji:banana:"
+icon: "./icon.png"
 description: "%description%"
 ui:
   blocks:
